@@ -10,11 +10,11 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how" className="py-20 md:py-28 relative bg-blue-950 container mx-auto rounded-4xl overflow-hidden">
+    <section id="how" className="py-20 md:py-28 relative bg-blue-950 w-[95%] lg:container  mx-auto rounded-4xl overflow-hidden">
       <div className="mx-auto max-w-7xl px-5 md:px-8 relative z-10">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-semibold uppercase tracking-wider text-white">How it works</span>
-          <h2 className="mt-3  text-white text-3xl font-bold md:text-5xl">From install to informed in a minute</h2>
+          <h2 className="mt-3  text-white text-3xl lg:text-[40px] font-bold ">From install to informed in a minute</h2>
         </div>
 
         <div className="relative mt-16">

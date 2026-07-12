@@ -17,7 +17,7 @@ export function WhyChoose() {
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-semibold uppercase tracking-wider text-primary-glow text-blue-950">Why 60Sec</span>
-          <h2 className="mt-3 text-balance text-3xl font-bold md:text-5xl text-blue-950">Why choose 60Sec?</h2>
+          <h2 className="mt-3 text-balance text-3xl lg:text-[40px] font-bold  text-blue-950">Why choose 60Sec?</h2>
           <p className="mt-4 text-muted-foreground">Built for people who want news, not noise.</p>
         </div>
 

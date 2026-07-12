@@ -9,30 +9,30 @@ import ShapeGrid from "./animation/ShapeGrid ";
 
 const floatingCards = [
   { label: "BREAKING", title: "Markets hit record high", color: "bg-[#fdc604] text-black", pos: "top-4 -left-6 md:-left-16", delay: 0, r: -6 },
-  { label: "TECH", title: "AI changes the way we work", color: "bg-white text-blue-950", pos: "top-1/3 -right-6 md:-right-20", delay: 0.4, r: 5 },
+  { label: "TECH", title: "AI changes the way we work", color: "bg-white text-blue-950", pos: "top-1/3 -right-6 md:-right-15 lg:-right-20", delay: 0.4, r: 5 },
   { label: "SPORTS", title: "Champions crowned tonight", color: "bg-blue-950 text-white", pos: "bottom-12 -left-4 md:-left-20", delay: 0.8, r: 4 },
 ];
 
 export function Hero() {
   return (
-    <section className=" container mx-auto relative overflow-hidden bg-blue-950 text-primary-foreground mt-5 rounded-4xl ">
-      <div className="relative mx-auto grid px-12 gap-12  md:grid-cols-2 md:items-center py-10 z-10">
+    <section className=" w-[95%] lg:container mx-auto relative overflow-hidden bg-blue-950 text-primary-foreground mt-5 rounded-4xl ">
+      <div className="relative mx-auto grid px-4 lg:px-12 gap-12  md:grid-cols-2 md:items-center py-10 z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="text-center md:text-left pl-12"
+          className="text-center md:text-left pl-0 xl:pl-12"
         >
           <span className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-medium text-white">
             <Zap className="h-3.5 w-3.5 text-accent" />
             Stay Informed in 60 Seconds
           </span>
-          <h1 className="mt-6 text-balance text-6xl font-bold leading-[1.05]  w-full">
+          <h1 className="mt-6 text-balance text-[30px] lg:text-[40px] xl:text-5xl font-bold leading-[1.05]  w-full">
             News That Matters.
             <br />
             <span className="text-accent">In Just 60 Seconds.</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-xl text-base text-white/80 md:mx-0 md:text-lg">
+          <p className="mx-auto mt-6 max-w-xl text-base text-white/80 md:mx-0 text-[16px] xl:text-lg">
             Breaking news, business, politics, sports, technology, health and entertainment —
             summarized into quick, easy-to-read updates from around the world.
           </p>
@@ -59,7 +59,7 @@ export function Hero() {
               <Image
                   src={appMockup}
                   alt="60Sec app interface"
-                  className="object-cover w-[280px]  "
+                  className="object-cover w-[220px] lg:w-[280px]  "
                   priority
               />
             </div>

@@ -35,6 +35,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "60Sec",
   description: "News That Matters. In Just 60 Seconds",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -47,7 +50,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className={`min-h-full flex flex-col ${poppins.variable}`}>
+      <body className={`min-h-full flex flex-col bg-[#f0f1f7] ${poppins.variable}`}>
         <Header />
           {children}
         <Footer />
