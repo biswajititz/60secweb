@@ -129,6 +129,9 @@
     @apply font-sans;
   }
 }
+body{
+  background: #f0f1f7;
+}
 
 *,h1,h2,h3,h4,h5,h6, span, p, a, li, button, input, textarea {
   font-family: var(--font-poppins);
